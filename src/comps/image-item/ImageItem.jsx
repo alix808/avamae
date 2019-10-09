@@ -1,12 +1,22 @@
 import React from 'react';
+import { connect } from 'react-redux';
 import { FlexBox, FlexItem, ImgOne, ImgTwo } from './imageItemStyles';
 
-const ImageItem = () => (
-  <FlexBox>
-    <FlexItem>
-      <ImgOne />
-    </FlexItem>
-  </FlexBox>
-);
+const ImageItem = ({ user }) => {
+  const { imageStatus } = user;
 
-export default ImageItem;
+  return (
+    <FlexBox>
+      <FlexItem>{imageStatus ? <ImgOne /> : <ImgTwo />}</FlexItem>
+    </FlexBox>
+  );
+};
+
+const mapStateToProps = state => ({
+  user: state.user
+});
+
+export default connect(
+  mapStateToProps,
+  null
+)(ImageItem);

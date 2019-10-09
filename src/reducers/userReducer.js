@@ -3,7 +3,7 @@ import { SET_LOADING, CHANGE_IMAGE } from '../actions/types';
 const initialState = {
   loading: false,
   error: null,
-  image: true
+  imageStatus: true
 };
 
 export default (state = initialState, action) => {
@@ -17,7 +17,7 @@ export default (state = initialState, action) => {
     case CHANGE_IMAGE:
       return {
         ...state,
-        image: !state.image
+        imageStatus: !state.imageStatus
       };
 
     default:
