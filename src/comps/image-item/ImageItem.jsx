@@ -1,15 +1,12 @@
 import React from 'react';
+import { FlexBox, FlexItem, Img } from './imageItemStyles';
 
-import {
-  FlexBox,
-  BackgroundImageContainerOne,
-  BackgroundImageContainerTwo
-} from './imageItemStyles';
-
-const MenuItem = ({ imageUrl }) => (
+const ImageItem = () => (
   <FlexBox>
-    <BackgroundImageContainerOne imageUrl={imageUrl} />
+    <FlexItem>
+      <Img />
+    </FlexItem>
   </FlexBox>
 );
 
-export default MenuItem;
+export default ImageItem;

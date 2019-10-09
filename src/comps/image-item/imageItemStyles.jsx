@@ -1,25 +1,15 @@
 import styled from 'styled-components';
+import img from '../../assets/shutterstock_407632243.jpg';
 
 export const FlexBox = styled.div`
-  height: 440px;
-
   display: flex;
-  align-items: center;
-  justify-content: center;
 `;
 
-export const BackgroundImageContainerOne = styled.div`
-  width: 100%;
-  height: 100%;
-  background-size: cover;
-  background-position: 50% 25%;
-  background-image: ${({ imageUrl }) => `url(${imageUrl})`};
+export const FlexItem = styled.div`
+  flex: 1;
 `;
 
-export const BackgroundImageContainerTwo = styled.div`
-  width: 100%;
-  height: 100%;
-  background-size: cover;
-  background-position: 50% 50%;
-  background-image: ${({ imageUrl }) => `url(${imageUrl})`};
+export const Img = styled.div`
+  background: url(${img}) no-repeat 50% 25% / cover;
+  height: 440px;
 `;
