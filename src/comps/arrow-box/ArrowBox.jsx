@@ -4,7 +4,8 @@ import { ArrowContainer } from './arrowBoxStyles';
 const ArrowBox = () => {
   return (
     <ArrowContainer>
-      <h1>Hello</h1>
+      <i class='fas fa-arrow-left'></i>
+      <i className='fas fa-arrow-right'></i>
     </ArrowContainer>
   );
 };

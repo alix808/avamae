@@ -7,4 +7,8 @@ export const ArrowContainer = styled.span`
   width: 100%;
   height: 440px;
   opacity: 0.5;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
 `;
