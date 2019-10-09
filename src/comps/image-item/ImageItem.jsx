@@ -1,10 +1,10 @@
 import React from 'react';
-import { FlexBox, FlexItem, Img } from './imageItemStyles';
+import { FlexBox, FlexItem, ImgOne, ImgTwo } from './imageItemStyles';
 
 const ImageItem = () => (
   <FlexBox>
     <FlexItem>
-      <Img />
+      <ImgOne />
     </FlexItem>
   </FlexBox>
 );
