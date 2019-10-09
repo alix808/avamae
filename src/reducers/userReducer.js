@@ -1,9 +1,10 @@
-import { SET_LOADING, CHANGE_IMAGE } from '../actions/types';
+import { SET_LOADING, CHANGE_IMAGE, GET_BANNER } from '../actions/types';
 
 const initialState = {
   loading: false,
   error: null,
-  imageStatus: true
+  imageStatus: true,
+  banner: null
 };
 
 export default (state = initialState, action) => {
@@ -18,6 +19,13 @@ export default (state = initialState, action) => {
       return {
         ...state,
         imageStatus: !state.imageStatus
+      };
+
+    case GET_BANNER:
+      return {
+        ...state,
+        banner: action.payload.Details,
+        loading: false
       };
 
     default:

@@ -12,7 +12,11 @@ const ArrowBox = ({ changeImage }) => {
   );
 };
 
+const mapStateToProps = state => ({
+  user: state.user
+});
+
 export default connect(
-  null,
+  mapStateToProps,
   { changeImage }
 )(ArrowBox);
